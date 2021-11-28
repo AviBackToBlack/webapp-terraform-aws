@@ -18,7 +18,7 @@ subnet which can be used for SSH and HTTP access to the webserver.
 * Clone the repo
 
    ```sh
-   git clone https://github.com/AviBackToBlack_/webapp-terraform-aws.git
+   git clone https://github.com/AviBackToBlack/webapp-terraform-aws.git
    (Optional) cd webapp-terraform-aws && tfenv install
    ```
 
