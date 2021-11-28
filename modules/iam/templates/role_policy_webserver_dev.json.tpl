@@ -7,8 +7,7 @@
       "Resource": [
          "arn:aws:s3:::${s3_bucket_name}",
          "arn:aws:s3:::${s3_bucket_name}/*"
-      ],
-      "Principal": "*"
+      ]
     },
     {
       "Effect": "Allow",
