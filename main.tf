@@ -50,6 +50,8 @@ module "iam" {
   project_name                  = var.project_name
   user_role                     = var.user_role
   s3_bucket_name                = module.s3.s3_bucket_id
+
+  depends_on                    = [module.s3]
 }
 
 module "ec2" {
@@ -67,4 +69,6 @@ module "ec2" {
   bastion_profile_id            = module.iam.bastion_profile_id
   webserver_profile_id          = module.iam.webserver_profile_id
   key_pair                      = var.key_pair
+
+  depends_on                    = [module.vpc]
 }
