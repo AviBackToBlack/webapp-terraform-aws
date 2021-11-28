@@ -63,7 +63,7 @@ variable "vpc_private_subnet_cidr_block" {
 
 variable "ec2_instance_type" {
   type        = string
-  default     = "t3.micro"
+  default     = "t2.micro"
   description = "EC2 instance type"
 }
 

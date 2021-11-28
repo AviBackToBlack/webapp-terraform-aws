@@ -11,5 +11,5 @@ vpc_public_subnet_cidr_block  = "192.168.0.0/24"
 vpc_private_subnet_cidr_block = "192.168.1.0/24"
 
 # EC2
-ec2_instance_type = "t3.micro"
+ec2_instance_type = "t2.micro"
 ec2_volume_size   = "10"
