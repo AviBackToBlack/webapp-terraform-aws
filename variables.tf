@@ -45,25 +45,30 @@ variable "owner_email" {
 
 variable "vpc_cidr_block" {
   type        = string
+  default     = "192.168.0.0/23"
   description = "VPC CIDR Block"
 }
 
 variable "vpc_public_subnet_cidr_block" {
   type        = string
+  default     = "192.168.0.0/24"
   description = "Public Subnet CIDR Block"
 }
 
 variable "vpc_private_subnet_cidr_block" {
   type        = string
+  default     = "192.168.1.0/24"
   description = "Private Subnet CIDR Block"
 }
 
 variable "ec2_instance_type" {
   type        = string
+  default     = "t3.micro"
   description = "EC2 instance type"
 }
 
 variable "ec2_volume_size" {
   type        = number
+  default     = "10"
   description = "EC2 volume size"
 }
