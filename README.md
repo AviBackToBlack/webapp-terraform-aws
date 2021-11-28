@@ -54,7 +54,7 @@ subnet which can be used for SSH and HTTP access to the webserver.
   aws secretsmanager create-secret --name dev/publickeys --description "Dev Public Keys" --secret-string file://devusersecrets.json
   ```
 
-* Check that you have S3 backend bucket in place and retreive its name. If you do not have any S3 buckets that you want to use as S3 backend bucket you may create new using the following commands:
+* Check that you have S3 backend bucket in place and retreive its name. If you do not have any S3 buckets that you want to use as S3 backend bucket you may create a new one using the following commands:
 
   ```sh
   aws s3api create-bucket --acl private --bucket [projectname]-terraform-state --region us-east-1
