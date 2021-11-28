@@ -3,7 +3,7 @@ variable "aws_region" {
   description = "AWS Region"
   validation {
     condition     = length(var.aws_region) > 1
-    error_message = "Please check AWS region variable"
+    error_message = "Please check AWS region variable."
   }
 }
 
@@ -12,7 +12,7 @@ variable "project_name" {
   description = "Project Name"
   validation {
     condition     = can(regex("[a-z0-9][a-z0-9.-]+[a-z0-9]", var.project_name))
-    error_message = "The project name must be at least 3 chars long, begin and end with a letter or number and contain only [a-z0-9.-]"
+    error_message = "The project name must be at least 3 chars long, begin and end with a letter or number and contain only [a-z0-9.-]."
   }
 }
 
@@ -21,7 +21,7 @@ variable "user_role" {
   description = "User role. Can be 'dev' or 'test'."
   validation {
     condition     = lower(var.user_role) == "dev" || lower(var.user_role) == "test"
-    error_message = "The user role must be either dev or test"
+    error_message = "The user role must be either dev or test."
   }
 }
 
@@ -30,7 +30,7 @@ variable "key_pair" {
   description = "AWS Key Pair Name"
   validation {
     condition     = length(var.key_pair) > 1
-    error_message = "Please check the AWS Key Pair Name"
+    error_message = "Please check the AWS Key Pair Name."
   }
 }
 
@@ -39,7 +39,7 @@ variable "owner_email" {
   description = "Owner Email"
   validation {
     condition     = can(regex(".+@.+\\..+", var.owner_email))
-    error_message = "Please check the owner email"
+    error_message = "Please check the owner email."
   }
 }
 
