@@ -75,7 +75,7 @@ subnet which can be used for SSH and HTTP access to the webserver.
 ## Usage
 
 * Run the following commands:
-  
+
   ```sh
   terraform init
   terraform apply
@@ -84,7 +84,9 @@ subnet which can be used for SSH and HTTP access to the webserver.
 * Check the output to find the Bastion server public hostname, the Webserver private ip address and S3 bucket name:
 
   ```text
-
+  bastion_public_hostname = "ec2-XXX-XXX-XXX-XXX.compute-1.amazonaws.com"
+  s3_bucket_name = "projectname-role-XXXXXXXXXXXXXXXXXXXXXXXXXX"
+  webserver_private_ip = "192.168.1.XXX"
   ```
 
 ## Destroy
